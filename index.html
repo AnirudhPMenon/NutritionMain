@@ -1,0 +1,738 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Nutrition Help</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span>
+								<b><h1>iFrame<br>WEB</h1></b></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>NUTRITION</h1>
+								<p style="border-width: 2px solid; font-size: 12px;"><b><i>A diet is just code for a time when you eat food you dislike and still feel hungry.<br>Eat right, Future Bright.<br>Watch what you eat if you want to be petite.</i></b></p>
+								<form method="post" action="#">
+							<p class="text" style="font-size: 18px;"><b>Enter Your Height in M</b></p>
+							<input type="text" id="h" size="50" required/>
+							<p class="text" style="font-size: 18px;"><b>Enter Your Weight in KG</b></p>
+							<input type="text" id="w" size="50" required/>
+							<br>
+
+							<select name="V/NV" id="V/NV" onchange="select();" required>
+								<option>--Select Course--</option>
+							  <option>Vegetarian</option>
+							  <option>Non-Vegetarian</option>
+							  
+							</select>
+							
+							<p id="Result" style="font-size:30px;"></p>
+							<p id="Course"></p>
+							<button id="btn" onclick="BMI()">Calculate</button>
+
+						
+							
+						</div>
+					</div>
+					<div class="content">
+						<nav>
+							<ul>
+								
+								<li><a href="#about">About</a></li>
+								<li><a href="#Work">Work</a></li>
+								<li><a href="#shop">Shop</a></li>
+								<li><a href="#contact">Contact</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</div>
+
+					</header>
+		
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">About</h2>
+								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<p style="font-size: 18px;"><b>Body mass index (BMI) is a person’s weight in kilograms divided by the square of height in meters. BMI is an inexpensive and easy screening method for weight category—underweight, healthy weight, overweight, and obesity.
+
+BMI does not measure body fat directly, but BMI is moderately correlated with more direct measures of body fat 1,2,3. Furthermore, BMI appears to be as strongly correlated with various metabolic and disease outcome as are these more direct measures of body fatness<br>
+So in this website we help you in not only finding about your BMI but also provide you with a basic set of food items that are supposed to be eaten to create a change in BMI number.</b></p>
+							</article>
+
+
+							<article id="Work">
+								<h2 class="major">How to Calculate BMI</h2>
+								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<p style="font-size: 18px;"><b>
+								USC Units:<br>
+								BMI = 703 × 	
+								mass (lbs)/
+								height<sup>2</sup> (in)
+								<br>
+								<br>
+								
+								SI, Metric Units:<br>
+								BMI = 	
+								mass (kg)/
+								height<sup>2</sup> (m)
+								
+                             </b></p>
+							</article>
+
+								<article id="shop">
+								<h2 class="major">Shop</h2>
+								<div class="coupon">
+  <div class="container">
+    <h3 style="color: #000000;font-size: 32px;">Company Logo</h3>
+  </div>
+  <img src="images/organic.jpg" alt="Avatar" style="width:100%;">
+  <div class="container" style="background-color:white">
+  	
+    <b><p style="color: #000000;font-size: 32px;">20% Coupon!</p></b>
+    <p style="color: #000000">Use this Coupon to gain 20 % of discount on any of the organic vegetables u buy!<br>
+    Can Be used only once!</p>
+  </div>
+  <div class="container">
+    <p style="color: #000000">Use Promo Code:<span class="promo">BOH232</span></p>
+    <p class="expire">Expires: April 15, 2021</p>
+    
+  </div><div class="copu">
+  <div class="vertical-center">
+   <button class="" id="btn" onclick="Coupon()" style="color: #000000">Use Coupon</button>
+  </div>
+</div>
+</div>
+							</article>
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" required />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" required/>
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4" required></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+								<ul class="icons">
+									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
+
+							<article id="below">
+								<h2 class="major">Below 17</h2><p style="font-family:Century Gothic; color:#FFFFFF"><b>if your BMI value is below 17 you are considered to be very severely underweight. 
+this will result in weakness imune system, fragile bones and tiredness.
+you may be under weight due to genetics,improper metabolism ofnutrients and lack of food. 
+we have listed some food items to built and gain weight::</b></p>
+								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								   <div id="gallery-text">
+
+    <div id="gallery-text-left" style="float:left">
+    <p id="gallery-text-quote-left" style="font-family:Century Gothic; color:#006600"><b>VEG:  <br>                                                           
+
+Breakfast:<br>
+ *dosa(ragi,madai,masala dosa,uttapam, chilli paratha<br>
+ *idle<br>
+ *pongal,upma<br>
+ *a glass of milk(coffee,tea or any fruit juice)<br>
+ *oil items( poori, fried chips)<br>
+ *fruits<br>
+ *nut(burfi,roasted nuts,nuts salad)<br>
+ *dark chocolate(lava cakes,browniesw,puff cakes<br>
+ *cheese(cheese ball,sandwitch,burgur,<br>pizza,macaroni,pasta)<br>
+ *yoghurt<br>
+ <br>
+
+
+lunch:<br>
+
+*RICE(FRIED RICE,SAMBAR,rasam,curd,lemon rice,bhindi rice
+tomato rice,veg biryani,mango rice,pulao,coconut rice,
+aloo gobi,mushroom briyani,amla rice,pickle)<br>
+
+Dinner:<br><br>
+
+*chappati (panner butter masala,chana masala,gobi machurian)</b></p> </p>
+    </div>
+    <div id="gallery-text-left" style="float:right">
+    <p id="gallery-text-quote-right" style="font-family:Century Gothic; color:#006600"><b>NON VEG:<br>
+                                                           
+
+Breakfast:<br>
+ *dosa(ragi,madai,masala dosa,uttapam, chilli paratha<br>
+ *idle<br>
+ *pongal,upma<br>
+ *a glass of milk(coffee,tea or any fruit juice)<br>
+ *oil items( poori, fried chips)<br>
+ *fruits<br>
+ *nut(burfi,roasted nuts,nuts salad)<br>
+ *dark chocolate(lava cakes,browniesw,puff cakes<br>
+ *cheese(cheese ball,sandwitch,burgur,<br>pizza,macaroni,pasta)<br>
+ *yoghurt<br>
+ <br>
+
+
+lunch:<br>
+
+*RICE(FRIED RICE,SAMBAR,rasam,curd,lemon rice,bhindi rice
+tomato rice,veg biryani,mango rice,pulao,coconut rice,
+aloo gobi,mushroom briyani,amla rice,pickle)<br>
+chicken (rice,lollipops,dum kebabbriyani,butter chicken,kebab
+chicken sukka,chicken 65,chicken baddam roll,Grilled Chicken Escalope with Fresh Salsa. ...
+Mutton Korma,Pina Colada Pork Ribs,Tandoori Lamb Chops,Malabar Fish Biryani,
+Keema Samosa,fish,prawn,mutton,crab
+
+Dinner:<br><br>
+
+*chappati (panner butter masala,chana masala,gobi machurian)<br>
+chicken (rice,lollipops,dum kebabbriyani,butter chicken,kebab
+chicken sukka,chicken 65,chicken baddam roll,Grilled Chicken Escalope with Fresh Salsa. ...
+Mutton Korma,Pina Colada Pork Ribs,Tandoori Lamb Chops,Malabar Fish Biryani,
+Keema Samosa,fish,prawn,mutton,crab</b></p>
+							</article>
+
+								<article id="seventh">
+								<h2 class="major">17-18.5</h2>
+								<h2 class="major">Below 17</h2><p style="font-family:Century Gothic; color:#FFFFFF"><b>Your BMI is in the range of 17-18.5. This shows you are not in perfect state!
+You want to gain your weight according to your given data. So here are some
+list of items you should include in your foods:-</b></p>
+								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+							
+    <div id="gallery-text-left" style="float:left">
+    <p id="gallery-text-quote-left" style="font-family:Century Gothic; color:#006600"><b>VEG<br><br>
+1. Milk - Milk offers a mix of fat, carbohydrates and proteins. And also a
+excellent source of vitamins, and minerals including calcium.<br>
+
+2. Rice - A cup of rice contains 200 calories. It is also a good source of
+carbohydrates which contribute to weight gain safely.<br>
+
+3. Protein shakes - Protein shakes helps you to gain weight easily and
+efficiently. It also helps you to build muscles . Also dont take more added sugar
+in your shakes.<br>
+
+4. Nuts -Consuming nuts regularly can help a person to gain weight safely nuts
+and are a great snack and can be added to many meals including salads. raw dry
+roasted nuts have the most health benefits.<br>
+
+5. Whole grain breads-These breads contain complex carbohydrates,
+which can promote weight gain. Some also contain seeds, which provide
+added benefits.<br>
+
+6. other starches-Starches help some of the foods already listed to boost
+muscle growth and weight gain. They add bulk to meals and boost the
+number of calories consumed.<br>
+Other foods rich in starches include:<br>
+* potatoes<br>
+* corn<br>
+* beans<br>
+
+* squash<br>
+* oats<br>
+* legumes<br>
+* winter root vegetables<br>
+* sweet potatoes<br>
+* pasta<br>
+* whole-grain cereals<br>
+* whole-grain breads<br>
+* cereal bar<br>
+Dried fruits- Dried fruits are rich in nutrients and calories, with one-quarter
+cup of dried cranberries containing around 130 calories.<br>
+. Avocados-Avocados are rich in calories and fat, as well as some vitamins
+and minerals.<br>
+Dark chocolate-Dark chocolate is a high fat, high-calorie food. It also
+contains antioxidants. A person looking to gain weight should select
+chocolate that has a cacao content of at least 70 percent.<br>
+ Cereal bars-Cereal bars can offer the vitamin and mineral content of
+cereal in a more convenient form. A person should look for bars that
+contain whole grains, nuts, and fruits. Avoid those that contain excessive
+amounts of sugar.</b></p> </p>
+    </div>
+    <div id="gallery-text-left" style="float:right">
+    <p id="gallery-text-quote-right" style="font-family:Century Gothic; color:#006600"><b>Non veg<br><br>
+Eggs-Eggs are a good source of protein, healthy fat, and other nutrients.
+Most nutrients are contained in the yolk.<br>
+Salmon-Six ounces of salmon will contain about 240 calories and salmon
+is also rich in healthy fats, making it a good choice for those looking to gain
+weight.<br>
+
+ Red meat-Consuming red meat has been shown to help with building
+muscle and gaining weight. Steak contains both leucine and creatine,
+nutrients that play a significant role in boosting muscle mass. Steak and
+other red meats contain both protein and fat, which promote weight gain.</b></p>
+							</article>
+
+								<article id="eighth">
+								<h2 class="major">18.5-24.9</h2>
+								<p style="font-family:Century Gothic; color:#FFFFFF"><b>The range Of BMI 18.5-24.9 indicates that you are in a healthy range of BMI. So be happy</b></p>
+								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								
+								   <div id="gallery-text">
+
+    <p style="font-family:Century Gothic; color:#FFFFFF"><b>Maintaing the same is also important for proper health. But maintaining this takes some more work.
+
+For this staying hydrated and following balanced diet is very important. Eating more greens can help you out to maintain this healthy state. Do work out daily for 10 to 20 minutes. And stay healthy and be happy!</b></p>
+							</article>
+
+								<article id="nineth">
+								<h2 class="major">25-29.9</h2>
+								<p style="font-family:Century Gothic; color:#FFFFFF"><b>This range indicates high-risk weight in your body because weighing too much can make you sick.
+Being overweight increases the risk of diabetes,heart attack and other serious issues.
+To help you out we have listed below several food items to reduce and keep a count of your calories</b></p>
+								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<p style="font-family:Century Gothic; color:#FFFFFF"><b>When you’re trying to lose weight, Consuming the wrong foods can amplify your cravings and set you up for failure before the day even begins.
+Eating a high-protein food may help cut cravings and aid in weight loss.</b></p>
+								
+								   <div id="gallery-text">
+
+    <div id="gallery-text-left" style="float:left">
+    <p id="gallery-text-quote-left" style="font-family:Century Gothic; color:#006600"><b>VEG:<br><br>
+
+Breakfast:<br><br>
+
+*Oatmeal<br>
+*Eggs<br>
+*Nuts<br>
+*Almonds<br>
+*Wheat Germ<br>(A component of the wheat kernel <br>that contains vitamins and minerals<br>
+*Yogurt<br>
+*Smoothies<br>
+*Coffee<br>
+*Green Tea<br>
+*Chia Seeds<br>
+*Flaxseeds<br>
+
+
+Fruits:Whole fruits <br>(not fruit juices)<br>
+
+*Bananas<br>
+*Berries<br>
+*Grapefruits<br>
+*Kiwis<br><br>
+
+
+Lunch:<br><br>
+
+*Whole grains<br> (whole wheat, steel cut oats,<br> brown rice, quinoa)<br>
+*Vegetables <br>(a colorful variety-not potatoes)<br>
+*Leafy Greens<br>
+*Cruciferous Vegetables<br>(broccoli, cauliflower,<br> cabbage and Brussels sprouts)<br>
+*Boiled Potatoes<br>
+*Beans and Legumes<br>( lentils, black beans, kidney beans)<br>
+*Soups<br>
+*Avocados<br><br>
+
+Dinner:<br><br>
+
+*Idli<br>
+*Dosa<br>
+*Banana<br>
+*Protein Shake<br>
+*Peanut Butter on <br>Whole Grain Bread<br></b></p> </p>
+    </div>
+    <div id="gallery-text-left" style="float:right">
+    <p id="gallery-text-quote-right" style="font-family:Century Gothic; color:#006600"><b>NON VEG:<br><br>
+
+*Salmon<br>
+*Lean Beef <br>
+*Chicken Breast<br>
+*Tuna<br>
+
+
+Foods To Be Avoided:<br><br>
+
+*Sugar-sweetened beverages <br>(soda, fruit drinks, sports drinks)<br>
+*Potatoes <br>(baked or fried)<br>
+*Candy Bars<br>
+*White Bread<br>
+*Ice Cream<br>
+*High-Calorie Coffee Drinks<br>
+*Pastries, Cookies and Cakes<br>
+*Most Fruit juice<br> (no more than a small amount per day)<br>
+*fast food</b></p>
+							</article>
+
+								<article id="above">
+								<h2 class="major">Above 30</h2>
+								<p style="font-family:Century Gothic; color:#FFFFFF"><b>As your BMI value is greater than 30kg,you are somewhat obese.
+It is dangerous to your health as it increases your blood pressure,
+ blood  cholesterol levels you may also suffer from heart attacks. 
+so it is important for you to lose weight.it can be achieve by exercising regularly.
+we have set down some food items to slope your body weight all the way to normal weight.</b></p>
+								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+							
+								   <div id="gallery-text">
+
+    <div id="gallery-text-left" style="float:left">
+    <p id="gallery-text-quote-left" style="font-family:Century Gothic; color:#006600"><b>VEG ITEMS:<br><br>
+
+BREAKFAST:<br>
+
+*bread (jam,honey,sause,hershey)<br>
+*oats(<br>
+*Sprouts(alfalfa,bean,<br>moong,broccoli,brussel,<br>chana,whole grains,<br>Walnuts,Lentils)<br>
+*salad,veg sandwich<br> without any fat items<br>
+*soup,sausages and few Citrus fruits(grapes,<br>Blueberries,Raspberries)<br>
+*green tea,black coffee<br>
+
+
+LUNCH:<br>
+
+* boiled vegetable with <br>little amount of salt<br>
+*kinova rice(keeh-wah)<br>
+*whole egg,leafy green(Spinach),salmon,<br>chickpea,Avocados,<br>
+Pumpkin Seeds,Plain Greek Yogurt<br>
+
+DINNER:<br>
+
+*chappati(multigrain <br>roti,rotla,bajra roti)<br>
+*wheat kheer<br>
+*oats dosa<br>
+*papaya, pomegranate, guava, apples<br>
+*chickpeas</b></p> </p>
+    </div>
+    <div id="gallery-text-left" style="float:right">
+    <p id="gallery-text-quote-right" style="font-family:Century Gothic; color:#006600"><b>NON VEG:<br><br>
+
+mostly you have to avoid eating non veg as much as possible.<br>
+eat sea food,tuna,beef,fish fry,keema beef curry,beef patties,grilled chicken breast<br><br>
+ 
+
+AVOID USING:<br>
+excess oil,added sugar,refined carbohydrate,junk food</b></p>
+							</article>
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright" style="font-size: 15px; "><b>&copy;First Year SIT CSE-C Batch&copy;</b></p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+	
+<script type="text/javascript">
+	function select(){
+		var d=document.getElementById("V/NV");
+		var displaytext=d.options[d.selectedIndex].text;
+		
+		document.getElementById("txtvalue").value=displaytext;
+		document.getElementById("Course").innerHTML="Your Course Is : " + document.getElementById("txtvalue").value;
+	}
+</script>
+
+		<script type="text/javascript">
+	function BMI(){
+		var h=document.getElementById('h').value;
+	var w=document.getElementById('w').value;
+	var bmi=w/(h/100*h/100);
+	var bmio=(bmi.toFixed(2));
+
+	if(bmio<=17)location.replace('file:///C:/Users/Pradeep/Desktop/webcreation/index.html#below')
+	if(bmio>17 && bmio <18.5)location.replace('file:///C:/Users/Pradeep/Desktop/webcreation/index.html#seventh')
+		if(bmio>=18.5 && bmio<24.9)location.replace('file:///C:/Users/Pradeep/Desktop/webcreation/index.html#eighth')
+			if(bmio>=24.9 && bmio<30)location.replace('file:///C:/Users/Pradeep/Desktop/webcreation/index.html#nineth')
+			if(bmio>=30)location.replace('file:///C:/Users/Pradeep/Desktop/webcreation/index.html#above')
+
+	document.getElementById("Result").innerHTML="Your BMI Is : " + bmio;
+	
+}
+</script>
+
+<script type="text/javascript">
+	function Coupon(){
+		location.replace('https://www.facebook.com/Organic-food-123-1895501573997311/?hc_ref=ARQNBigqg26EejDA1SBEf0weR96Ds6zWlhDuTtGpRy6hScZshYinJkavlYdhAKgAQfw&fref=nf&__tn__=kC-R')
+	}
+</script>
+
+
+
